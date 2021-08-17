@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Fun with triangle | Mark 12</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navigation">
+        <div>
+          <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+              <a class="link" href="/index.html">
+                Triangle
+              </a>
+            </li>
+
+            <li class="list-item-inline">
+              <a class="link" href="/hypotenuse.html">
+                Find Hypotenuse
+              </a>
+            </li>
+
+            <li class="list-item-inline">
+              <a class="link" href="/area-of-triangle.html">
+                Area of triangle
+              </a>
+            </li>
+
+            <li class="list-item-inline">
+              <a class="link link-active" href="/triangleQuiz.html">
+                Triangle Quiz
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="headings">
+          <h1></h1>
+          <h3></h3>
+        </div>
+        <div class="quiz-container">
+          <form id="triangle-quiz-form">
+            <div class="question">
+              <p>What do you call a triangle whose sides are all equal?</p>
+              <label>
+                <input
+                  type="radio"
+                  name="question1"
+                  value="equilateral"
+                />Equilateral
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="question1"
+                  value="isosceles"
+                />Isosceles
+              </label>
+              <label>
+                <input type="radio" name="question1" value="scalene" />Scalene
+              </label>
+            </div>
+            <div class="question">
+              <p>Isosceles triangle is defined as</p>
+              <label>
+                <input type="radio" name="question2" value="a2" />Two sides are
+                equal
+              </label>
+              <label>
+                <input type="radio" name="question2" value="b2" />All sides are
+                equal
+              </label>
+              <label>
+                <input type="radio" name="question2" value="c2" />No sides are
+                equal
+              </label>
+            </div>
+            <div class="question">
+              <p>Which ancient Greek philosopher studied triangles?</p>
+              <label>
+                <input type="radio" name="question3" value="plato" />Plato
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="question3"
+                  value="pythagoras"
+                />Pythagoras
+              </label>
+              <label>
+                <input type="radio" name="question3" value="socrates" />
+                Socrates
+              </label>
+            </div>
+            <div class="question">
+              <p>Complete this right angle equation: a^2 + b^2 =?</p>
+              <label>
+                <input type="radio" name="question4" value="a4" />(ab)^2
+              </label>
+              <label>
+                <input type="radio" name="question4" value="b4" />c^2
+              </label>
+              <label>
+                <input type="radio" name="question4" value="c4" />
+                d^2
+              </label>
+            </div>
+            <div class="question">
+              <p>What is a hypotenuse?</p>
+              <label>
+                <input type="radio" name="question5" value="a5" />Total length
+                of all sides of triangle.
+              </label>
+              <label>
+                <input type="radio" name="question5" value="b5" />A triangle
+                with four side.</label
+              >
+              <label>
+                <input type="radio" name="question5" value="c5" />
+                The longest side of a triangle.
+              </label>
+            </div>
+          </form>
+          <button class="check-triangle-btn">Check</button>
+        </div>
+        <hr />
+        <div class="triangle-output">
+          <h3>Your score will display here.</h3>
+          <div class="triangle-output-text">
+            Score: For each correct answer you will get 1 point.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/triangleQuiz.js"></script>
+  </body>
+</html>

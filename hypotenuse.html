@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Fun with triangle | Mark 12</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navigation">
+        <div>
+          <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+              <a class="link" href="/index.html">
+                Triangle
+              </a>
+            </li>
+
+            <li class="list-item-inline">
+              <a class="link link-active" href="/hypotenuse.html">
+                Find Hypotenuse
+              </a>
+            </li>
+
+            <li class="list-item-inline">
+              <a class="link" href="/area-of-triangle.html">
+                Area of triangle
+              </a>
+            </li>
+
+            <li class="list-item-inline">
+              <a class="link" href="/triangleQuiz.html"> Triangle Quiz </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="headings">
+          <h1></h1>
+          <h3></h3>
+        </div>
+        <div class="quiz-container">
+          <label>Base</label>
+          <input type="number" class="angles" id="base" />
+          <br />
+          <label>Altitude</label>
+          <input type="number" class="angles" id="altitude" />
+          <br />
+          <button class="check-triangle-btn">Check</button>
+          <br />
+        </div>
+        <hr />
+        <div class="triangle-output">
+          <h3>Hypotenuse value is-</h3>
+          <div class="triangle-output-text">
+            Hypotenuse = sqrt((Base)^2 + (Altitude)^2)
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/hypotenuse.js"></script>
+  </body>
+</html>

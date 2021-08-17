@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #1d3557;
+  --dark-grey: #457b9d;
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+body {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+#app {
+  text-align: center;
+  background: var(--dark-grey);
+  padding: 2rem;
+}
+
+/** navigation **/
+
+.navigation {
+  color: var(--primary-color);
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin: auto;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.navigation .nav-brand {
+  font-weight: bold;
+}
+
+.nav-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .link {
+  color: var(--primary-color);
+}
+
+.navigation .link-active {
+  font-weight: bold;
+  margin: 1px;
+  margin-bottom: 3px;
+}
+
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.list-item-inline {
+  display: inline;
+}
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+input {
+  font-size: 16px;
+  font-size: Max(16px, 1em);
+  font-family: inherit;
+  padding: 0.5em 0.5em;
+  background-color: #fff;
+  border: 2px solid #8b8a8b;
+  border-radius: 4px;
+  margin: 0.5rem;
+}
+
+input:focus {
+  border-color: hsl(
+    var(--input-focus-h),
+    var(--input-focus-s),
+    var(--input-focus-l)
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8
+    );
+  outline: 3px solid transparent;
+}
+
+button {
+  padding: 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  border-width: 1px 1px 3px;
+  margin: 1rem;
+  width: 40%;
+  cursor: pointer;
+}
+
+.triangle-output-text {
+  color: #472c1b;
+  margin: 1rem;
+  text-decoration: underline dotted;
+  font-weight: 600;
+}
+.question {
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
